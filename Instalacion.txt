@@ -1,0 +1,75 @@
+Iniciar proyecto usando Tailwind CSS v3.0 (Enero/2022)
+Iniciar proyecto npm: npm init
+
+Instalar Tailwind como un plugin de PostCSS: npm install -D tailwindcss postcss autoprefixer
+
+Documentación de instalación: https://tailwindcss.com/docs/installation/using-postcss
+
+Se ejecuta el siguiente comando npx tailwindcss init para crear el archivo de plantillas tailwind.config.js colocando la siguiente configuración:
+module.exports = {
+  content: ["./public/index.html", "./src/**/*.{html,js}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
+Incluir Tailwind en el CSS agregando las directivas a src/css/tailwind.css:
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+Para correr los estilos de Tailwind se necesita ejecutar el siguiente comando: npx tailwindcss -i ./src/css/tailwind.css -o ./public/css/tailwind.css --watch donde estamos indicando que nuestro archivo tailwind.css que proviene de src haga un build en la carpeta de public al archivo tailwind.css.
+
+Forms
+Instalación:
+
+# Using npm
+npm install @tailwindcss/forms
+
+# Using Yarn
+yarn add @tailwindcss/forms
+Agregando el plugin al archivo de configuración tailwind.config.js:
+
+module.exports = {
+  theme: {
+    // ...
+  },
+  plugins: [
+    require('@tailwindcss/forms'),
+    // ...
+  ],
+}
+Typography
+Instalación:
+
+# Using npm
+npm install -D @tailwindcss/typography
+Agregando el plugin al archivo de configuración tailwind.config.js:
+
+module.exports = {
+  theme: {
+    // ...
+  },
+  plugins: [
+    require('@tailwindcss/typography'),
+    // ...
+  ],
+}
+Aspect ratio
+Instalación:
+
+# Using npm
+npm install @tailwindcss/aspect-ratio
+
+# Using Yarn
+yarn add @tailwindcss/aspect-ratio
+Agregando el plugin al archivo de configuración tailwind.config.js:
+
+module.exports = {
+  theme: {
+    // ...
+  },
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+    // ...
+  ],
+}
