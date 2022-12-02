@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../public/css/tailwind.css">
+    <title>Platzi Travel</title>
+</head>
+<body class="font-Montserrat">
+    <nav></nav>
+    <div id="tab_bar"></div>
+    <secttion>
+        <div id="home">
+            <div class="w-full h-3/4">
+                <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center">
+                    <input class="w-3/4 text-center outline-none p-3 rounded-full shadow-sm transition ease-in-out duration-500 focus-within:shadow-sm focus:ring-2 transform focus:w-11/12" placeholder="San Francisco" type="search" name="" id="">
+                    <button class=" w-52 rounded-full text-lg font-semibold p-4 text-primary bg-white transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:-translate-y-1 hover:scale-110">
+                        Explore More
+                    </button>
+                </div>
+                <div class="w-full h-full">
+                    <img src="./img/sanFrancisco.jpg" alt="San sanFrancisco city">
+                </div>
+            </div>
+        </div>
+        <div class="p-6" id="recommendations">
+            <p class="text-3xl font-semibold text-primary">Our Recommendations</p>
+            <section class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-6">
+                <div class="Card">
+                    <div class="w-full h-3/5 rounded-t-lg bg-norway bg-cover"></div>
+                    <div class="w-full h-2/5 px-4 rounded-b-lg bg-secondary">
+                        <p class="text-white font-bold text-xl py-2">Norway</p>
+                        <p class="text-white text-base">Beautiful landscapes</p>
+                    </div>
+                </div>
+                <div class="Card">
+                    <div class="w-full h-3/5 rounded-t-lg bg-new_york bg-cover"></div>
+                    <div class="w-full h-2/5 px-4 rounded-b-lg bg-white">
+                        <p class="text-terciary font-bold text-xl py-2">New York</p>
+                        <p class="text-terciary text-base">Concrete jungle</p>
+                    </div>
+                </div>
+                <div class="Card">
+                    <div class="w-full h-3/5 rounded-t-lg bg-yosemite bg-cover"></div>
+                    <div class="w-full h-2/5 px-4 rounded-b-lg bg-secondary">
+                        <p class="text-white font-bold text-xl py-2">Yosemite</p>
+                        <p class="text-white text-base">A break from the world</p>
+                    </div>
+                </div>
+                <div class="Card">
+                    <div class="w-full h-3/5 rounded-t-lg bg-seattle bg-cover"></div>
+                    <div class="w-full h-2/5 px-4 rounded-b-lg bg-white">
+                        <p class="text-terciary font-bold text-xl py-2">Seattle</p>
+                        <p class="text-terciary text-base">Big City</p>
+                    </div>
+                </div>
+                <div class="Card">
+                    <div class="w-full h-3/5 rounded-t-lg bg-switzerland bg-cover"></div>
+                    <div class="w-full h-2/5 px-4 rounded-b-lg bg-secondary">
+                        <p class="text-white font-bold text-xl py-2">Switzerland</p>
+                        <p class="text-white text-base">Big City</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div id="featured_rentals"></div>
+    </secttion>
+</body>
+</html>
