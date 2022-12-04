@@ -6,6 +6,20 @@
     @apply w-48 h-64 shadow-md rounded-lg flex-none transform transition-all hover:-translate-y-4 hover:shadow-xl cursor-pointer
 }
 
+.CardEven{
+    @apply bg-secondary text-white dark:bg-gray-700
+}
+
+.CardOdd{
+    @apply bg-white text-terciary dark:bg-gray-800 dark:text-gray-300
+}
+
 .CardTitle{
     @apply text-3xl px-8 pt-8 pb-2 font-semibold text-white
+}
+.CardInfo{
+    @apply text-sm px-8 text-white
+}
+.CardImage{
+    @apply w-full h-96 bg-cover bg-no-repeat rounded-xl lg:w-auto lg:text-right
 }

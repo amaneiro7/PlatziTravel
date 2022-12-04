@@ -1,7 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 const colors = require('tailwindcss/colors')
 module.exports = {
-  content: ["./public/index.html", "./src/**/*.{html,js}"],  
+  content: ["./public/index.html", "./src/**/*.{html,js}"], 
+  darkMode: 'class',
   theme: {
     colors: {
       ...colors,
@@ -14,21 +15,21 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'sanFrancisco': "url('../img/sanFrancisco.jpg')",
-			  'sanFranciscoDesktop': "url('../img/sanFranciscoDesktop.jpg')",
-			  'yosemite': "url('../img/yosemite.jpg')",
-			  'LA': "url('../img/LA.jpg')",
-			  'seattle': "url('../img/seattle.jpg')",
-			  'new_york': "url('../img/new_york.jpg')",
-			  'norway': "url('../img/norway.jpg')",
-			  'sydney': "url('../img/sydney.jpg')",
-			  'miami': "url('../img/miami.jpg')",
-			  'switzerland': "url('../img/switzerland.jpg')",
-			  'bali': "url('../img/bali.jpg')",
-			  'norway': "url('../img/norway.jpg')",
-			  'chicago': "url('../img/chicago.jpg')",
-			  'europe': "url('../img/europe.jpg')",
-			  'iceland': "url('../img/iceland.jpg')",
+        'sanFrancisco': "url('../img/sanFrancisco.jpg'), linear-gradient(190deg,rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3))",
+			  'sanFranciscoDesktop': "url('../img/sanFranciscoDesktop.jpg'), linear-gradient(190deg,rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3))",
+			  'yosemite': "url('../img/yosemite.jpg'), linear-gradient(190deg,rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3))",
+			  'LA': "url('../img/LA.jpg'), linear-gradient(190deg,rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3))",
+			  'seattle': "url('../img/seattle.jpg'), linear-gradient(190deg,rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3))",
+			  'new_york': "url('../img/new_york.jpg'), linear-gradient(190deg,rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3))",
+			  'norway': "url('../img/norway.jpg'), linear-gradient(190deg,rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3))",
+			  'sydney': "url('../img/sydney.jpg'), linear-gradient(190deg,rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3))",
+			  'miami': "url('../img/miami.jpg'), linear-gradient(190deg,rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3))",
+			  'switzerland': "url('../img/switzerland.jpg'), linear-gradient(190deg,rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3))",
+			  'norway': "url('../img/norway.jpg'), linear-gradient(190deg,rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3))",
+			  'chicago': "url('../img/chicago.jpg'), linear-gradient(190deg,rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3))",
+			  'europe': "url('../img/europe.jpg'), linear-gradient(190deg,rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3))",
+			  'iceland': "url('../img/iceland.jpg'), linear-gradient(190deg,rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3))",
+			  'bali': "url('../img/bali.jpg'), linear-gradient(190deg,rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3))",			  
       }
     },
   },
